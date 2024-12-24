@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: rgba(40, 57, 101, .9);
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-button {
+    background-color: rgba(40, 57, 101, .9);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+header img {
+    max-width: 150px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    right: 20px; /* Adjusted position to the right */
+    transform: translateY(-50%);
+}
+
+h1 {
+    flex-grow: 1;
+    margin: 0;
+}
+
+form {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input[type="text"],
+button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.table-container {
+    overflow-x: auto; /* Enable horizontal scroll */
+}
+
+table {
+    width: 100%;
+    border-collapse: separate; /* Use separate border-collapse */
+    border-spacing: 0 8px; /* Add vertical spacing between rows */
+    background-color: #fff;
+}
+
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+
+th {
+    padding: 10px; /* Add padding to separate the column titles */
+    position: sticky;
+    top: 0;
+    background-color: #357ebd;
+    color: white;
+    z-index: 1;
+    text-align: center; /* Align the text in the center */
+    white-space: nowrap; /* Prevent title wrapping */
+}
+
+th:last-child {
+    margin-right: 0; /* Remove margin from the last column title */
+}
+
+
+
+
+tbody {
+    height: 300px;
+    overflow-y: auto; /* Enable vertical scroll */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.no-data {
+    text-align: center;
+    padding: 20px;
+    color: #999;
+}
